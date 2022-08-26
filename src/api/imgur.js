@@ -9,7 +9,6 @@ export default {
             client_id: CLIENT_ID,
             response_type: 'token'
         }
-        const url = `${ROOT_URL}/oauth2/authorize?${qs.stringify(querystring)}`
-        window.location = url
+        window.location = `${ROOT_URL}/oauth2/authorize?${qs.stringify(querystring)}`
     }
 }

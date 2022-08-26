@@ -5,7 +5,7 @@
         </a>
 
         <div class="right menu">
-            <a href="#" class="ui item" @click="loginClick">
+            <a href="#" class="ui item" @click="login">
                 Login
             </a>
         </div> 
@@ -26,13 +26,7 @@
             testMethod() {console.log("I am a test method")},
             ...mapActions({
                 login: 'login'
-            }),
-            loginClick() {
-                console.log(this);  
-                // store.dispatch("login");
-             
-                // this.login;
-            }
+            })
         }
     }
 </script>
